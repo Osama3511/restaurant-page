@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'mainfont';
+    src: url('./fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-lh: 1.5;
+    --body-bg-color: #334155;
+    --main-font-size: 14px;
+    --main-color: #ffffff;
+    --header-bg-color: #0f172a;
+    --content-bg-color: #64748b;
+}
+
+body {
+    font-family: 'mainfont';
+
+    background-color: var(--body-bg-color);
+    color: var(--main-color);
+    line-height: var(--body-lh);
+    font-size: var(--main-font-size);
+
+    height: 100vh;
+    padding: 0px 48px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    background-color: var(--header-bg-color);
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav > button {
+    font-size: 16px;
+    padding: 4px 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid ;
+    color: var(--main-color);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--content-bg-color);
+}
+
+#content > .card {
+    padding: 32px;
+    border: 4px solid;
+}
